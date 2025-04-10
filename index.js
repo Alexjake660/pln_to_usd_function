@@ -9,9 +9,9 @@ app.post('/functions/plnToUsd', async (req, res) => {
   const { input } = req.body;
   const amount = parseFloat(input);
 
-  if (isNaN(amount)) {
-    return res.status(400).send({ output: "Invalid input amount" });
-  }
+  // if (isNaN(amount)) {
+  //   return res.status(400).send({ output: "Invalid input amount" });
+  // }
 
   try {
     const response = await fetch(`https://api.frankfurter.app/latest?amount=${amount}&from=PLN&to=USD`);
@@ -27,7 +27,7 @@ app.post('/functions/plnToUsd', async (req, res) => {
 app.get('/functions/plnToUsd', (req, res) => {
   res.send({
     name: "plnToUsd",
-    description: "Convert Polish Zloty (PLN) to US Dollars (USD) using the Frankfurter API",
+    description: "Convert Polish Zloty (PLN) to US Dollars (USD)",
     input: {
       type: "number",
       description: "Amount in PLN to convert to USD",

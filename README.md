@@ -1,7 +1,7 @@
 
 # PLN to USD Converter
 
-This is a simple Express app that converts Polish Zloty (PLN) to US Dollars (USD) using the Frankfurter API.
+This is a simple Express app that converts Polish Zloty (PLN) to US Dollars (USD).
 
 ## Endpoints
 

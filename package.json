@@ -1,7 +1,7 @@
 {
   "name": "pln-to-usd",
   "version": "1.0.0",
-  "description": "Convert PLN to USD using Frankfurter API",
+  "description": "Convert PLN to USD",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
